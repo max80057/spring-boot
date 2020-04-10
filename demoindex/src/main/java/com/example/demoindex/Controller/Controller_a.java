@@ -18,6 +18,7 @@ public class Controller_a {
     @RequestMapping("/MyFirstPage")
     public String greeting(@RequestParam(value="title", required=false, defaultValue="哩勒工蝦咪") String title, Model model) {
         model.addAttribute("name", title);
+        System.out.println("");
         return "index";
     }
 }
